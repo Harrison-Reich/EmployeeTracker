@@ -95,4 +95,12 @@ function addRole() {
         start()
       })
     })
-} 
+}
+
+function seeEmployees() {
+  db.query('SELECT * FROM employee', (err, employees) => {
+    if (err) { console.log(err) }
+    console.table(employees)
+    start()
+  })
+}
