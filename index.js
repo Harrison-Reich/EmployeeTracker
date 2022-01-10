@@ -68,3 +68,31 @@ function seeRoles() {
     start()
   })
 }
+
+function addRole() {
+  inquirer.prompt([
+    {
+      type: 'input',
+      message: "What is title of the role?",
+      name: 'title'
+    },
+    {
+      type: 'input',
+      message: "What is the salary of the role?",
+      name: 'salary'
+    },
+    {
+      type: 'input',
+      message: "What is the department ID?",
+      name: 'department_id'
+    }
+  ])
+    .then(newRole => {
+      console.log(newRole)
+      db.query('INSERT INTO role SET ?', newRole, err => {
+        if (err) { console.log(err) }
+        console.log('New Role Added')
+        start()
+      })
+    })
+} 
