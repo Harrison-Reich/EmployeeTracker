@@ -28,7 +28,19 @@ const start = () => {
         addEmployees()
         break;
 
-      case 
+      case 'Update Employee Role':
+        updateEmployeeRoles()
+        break;
+
+      case 'View All Roles':
+        seeRoles()
+        break;
+
+      case 'Add A Role':
+        addRole()
+        break;
+
+        
 
     }
   })
