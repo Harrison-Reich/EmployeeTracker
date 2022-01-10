@@ -2,4 +2,4 @@ const inquirer = require('inquirer');
 const { prompt } = require('inquirer');
 const cTable = require('console.table');
 const mysql = require('mysql2')
-const db = mysql.createConnection('')
+const db = mysql.createConnection('mysql://root:rootroot@localhost:3306/employee_db')
