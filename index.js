@@ -40,8 +40,13 @@ const start = () => {
         addRole()
         break;
 
-        
+      case 'Add A Department':
+        addDepartment()
+        break;
 
+      case 'Exit':
+        end()
+        break;
     }
   })
 }
