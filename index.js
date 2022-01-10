@@ -104,3 +104,21 @@ function seeEmployees() {
     start()
   })
 }
+
+function addDepartment() {
+  inquirer.prompt([
+    {
+      type: 'input',
+      name: 'name',
+      message: 'Name the new department'
+    }
+  ])
+    .then(newDepartment => {
+      console.log(newDepartment)
+      db.query('INSERT INTO department SET ?', newDepartment, err => {
+        if (err) { console.log(err) }
+        console.log('New Department Added')
+        start()
+      })
+    })
+}
