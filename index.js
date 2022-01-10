@@ -50,3 +50,5 @@ const start = () => {
     }
   })
 }
+
+start()
