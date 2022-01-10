@@ -9,7 +9,7 @@ const start = () => {
     {
       type: 'list',
       message: 'What would you like to do?',
-      choices: ['View An Employee', 'View A Department', 'View All Roles', 'Add Employee', 'Add a Role', 'Add a Department', 'Update Employee Role', 'Exit'],
+      choices: ['View An Employee', 'View A Department', 'View All Roles', 'Add Employee', 'Add a Role', 'Add a Department', 'Exit'],
       name: 'todo'
     }
   ])
