@@ -24,7 +24,11 @@ const start = () => {
         viewDepartments()
         break;
 
-        case ''
+      case 'Add Employee':
+        addEmployees()
+        break;
+
+      case 
 
     }
   })
