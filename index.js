@@ -28,10 +28,6 @@ const start = () => {
           addEmployees()
           break;
 
-        case 'Update Employee Role':
-          updateEmployeeRoles()
-          break;
-
         case 'View All Roles':
           seeRoles()
           break;
@@ -121,4 +117,44 @@ function addDepartment() {
         start()
       })
     })
+}
+
+function addEmployees() {
+  inquirer.prompt([
+    {
+      type: 'input',
+      message: "What is the employee first name?",
+      name: 'first_Name'
+    },
+    {
+      type: 'input',
+      message: "What is the employee last name?",
+      name: 'last_Name'
+    },
+    {
+      type: 'input',
+      message: "What is the employee's role ID?",
+      name: 'role_id'
+    },
+    {
+      type: 'input',
+      message: "What is the employees's manager ID",
+      name: 'manager_id'
+    }
+  ])
+    .then(newEmployee => {
+      console.log(newEmployee)
+      db.query('INSERT INTO employee SET ?', newEmployee, err => {
+        if (err) { console.log(err) }
+        console.log('New Employee Added')
+        start()
+      })
+    })
+}
+
+function end() {
+  console.log('Good Bye')
+  setTimeout((function () {
+    return process.exit(22);
+  }), 0);
 }
