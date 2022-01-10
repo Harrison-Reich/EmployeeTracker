@@ -13,5 +13,9 @@ const start = () => {
       name: 'todo'
     }
   ])
-  .
+  .then(({ todo }) => {
+    switch (todo) {
+      case
+    }
+  })
 }
