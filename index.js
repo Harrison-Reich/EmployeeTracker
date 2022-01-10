@@ -15,7 +15,8 @@ const start = () => {
   ])
   .then(({ todo }) => {
     switch (todo) {
-      case
+      case 'View All Employee':
+        seeEmployee()
     }
   })
 }
