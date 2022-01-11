@@ -17,11 +17,11 @@ const start = () => {
       switch (todo) {
 
         case 'View An Employee':
-          viewEmployees()
+          seeEmployees()
           break;
 
         case 'View A Department':
-          viewDepartments()
+          seeDepartments()
           break;
 
         case 'Add Employee':
