@@ -13,6 +13,9 @@
   - [Tests](#tests)
   - [Questions](#questions)
 
+## Here is my Youtube video tutorial
+
+  <a href="">Youtube Tutorial</a> 
 
   ## Description
   An application where users are able to view and manage the departments, roles, and employees in their companies.
@@ -52,7 +55,3 @@
   GitHub: https://github.com/Harrison-Reich
 
   Email: hreich1998@gmail.com
-
-## Here is my Youtube video tutorial
-
-  <a href="https://www.youtube.com/watch?v=XofjoQ2IWiY">Youtube Tutorial</a> 
