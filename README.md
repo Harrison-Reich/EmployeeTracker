@@ -1,8 +1,5 @@
 # Employee Tracker
 
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/LohasOT/Employee-Tracker?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/LohasOT/Employee-Tracker?style=flat&logo=appveyor) ![Badge for GitHub commit activity](https://img.shields.io/github/commit-activity/w/LohasOT/Employee-Tracker?color=purple)![GitHub license](https://img.shields.io/badge/license-TheUnlicense-blue.svg)
-
-
   ## Table of Content
 
   - [Description](#description)

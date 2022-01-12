@@ -9,27 +9,28 @@ const start = () => {
     {
       type: 'list',
       message: 'What would you like to do?',
-      choices: ['View An Employee', 'View A Department', 'View All Roles', 'Add Employee', 'Add a Role', 'Add a Department', 'Exit'],
+      choices: ['View All Employees', 'View All Departments', 'View All Roles', 'Add Employee', 'Add A Role', 'Add A Department', 'Exit'],
       name: 'todo'
     }
   ])
     .then(({ todo }) => {
+
       switch (todo) {
 
-        case 'View An Employee':
+        case 'View All Employees':
           seeEmployees()
           break;
 
-        case 'View A Department':
+        case 'View All Departments':
           seeDepartments()
           break;
 
-        case 'Add Employee':
+          case 'View All Roles':
+            seeRoles()
+            break;
+            
+            case 'Add Employee':
           addEmployees()
-          break;
-
-        case 'View All Roles':
-          seeRoles()
           break;
 
         case 'Add A Role':
